@@ -67,7 +67,7 @@
 
 ## 【使用】
 
-- **打开 `.nov` 小说**：下载 `NovReader_Setup.exe` 安装即可
+- **打开 `.nov` 小说**：从 [Realease](https://github.com/Super-Cookie/NovReader/releases)里下载 `NovReader_Setup.exe` 后安装即可
 - **将 `.txt` 转化为 `.nov`**：直接修改文件格式后缀为`.nov`即可
 - **绑定`NovReader`为默认的`.nov`打开程序**：部分window版本由于安全原因，安装后不能自动绑定成功，
 需要手动打开`.nov`文件的右键菜单，选择属性，修改打开方式为`NovReader`即可
