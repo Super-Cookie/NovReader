@@ -1,0 +1,2 @@
+# NovReader - Python Native Desktop Application
+# Uses tkinter (built-in), no external dependencies required for core functionality

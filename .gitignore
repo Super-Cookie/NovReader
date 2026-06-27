@@ -1,0 +1,34 @@
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# 打包产物
+dist/
+build/
+*.exe
+*.spec
+
+# 示例小说
+samples/
+
+# 本地脚本
+scripts/
+
+# IDE
+.vscode/
+.idea/
+
+# 系统文件
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 虚拟环境
+venv/
+.venv/
+env/
