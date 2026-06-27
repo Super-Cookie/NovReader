@@ -42,7 +42,7 @@ class HomePage(ttk.Frame):
         # 副标题
         subtitle_label = tk.Label(
             center_frame,
-            text="小说阅读器  ·  .nov",
+            text="小说阅读器 | .nov",
             font=(TOC_FONT_FAMILY, 13),
             fg="#86868B",
             bg=WINDOW_BG,

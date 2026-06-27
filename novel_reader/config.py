@@ -3,7 +3,7 @@
 # ==================== 功能开关 ====================
 ENABLE_MULTI_TAB = False
 SHOW_RECENT_ON_HOME = False
-AUTO_RESTORE_LAST_FILES = True  # 启动时自动恢复上次打开的文件，默认关闭
+AUTO_RESTORE_LAST_FILES = False  # 启动时自动恢复上次打开的文件，默认关闭
 
 # ==================== 窗口配置 ====================
 DEFAULT_WIN_WIDTH = 1100
