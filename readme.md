@@ -48,11 +48,15 @@
 
 ## 【使用】
 
-- **打开 `.nov` 小说**：从 *Realease* 里下载 *NovReader_Setup.exe* 后安装即可 
-- **将 `.txt` 转化为 `.nov`**：1️⃣单个文件 直接修改文件格式后缀为 *.nov* 即可</br>
-                              2️⃣多个文件 可以下载*Realease* 里面的 TxtToNov.bat批量修改
-- **绑定`NovReader`为默认的`.nov`打开程序**：部分window版本由于安全原因，安装后不能自动绑定成功，
-需要手动打开 *.nov* 文件的右键菜单，选择属性，然后修改打开方式为 *NovReader* 即可
+- **打开 `.nov` 小说**：从 *Realease* 里下载 *NovReader_Setup.exe* 后安装即可</br>
+  1️⃣NovReader_Setup.exe 不会自动恢复上次打开的小说</br>
+  2️⃣NovReader_Setup_RestoreOpened.exe 每次会自动恢复上次打开的小说
+- **将 `.txt` 转化为 `.nov`**：</br>
+1️⃣单个文件 直接修改文件格式后缀为 *.nov* 即可</br>
+2️⃣多个文件 可以下载*Realease* 里面的 TxtToNov.bat批量修改
+- **绑定`NovReader`为默认的`.nov`打开程序**：</br>
+部分window版本由于安全原因，安装后不能自动绑定成功</br>
+需要用户手动打开 *.nov* 文件的右键菜单，选择属性，然后修改打开方式为 *NovReader* 即可
 
 ---
 
