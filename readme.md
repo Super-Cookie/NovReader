@@ -17,7 +17,8 @@
 &nbsp; &nbsp; &nbsp; &nbsp; 所以经常需要人工轻量级修订，而 *.epub* 格式十分复杂，**想要修改起来十分十分麻烦** </br>
 ✅ `.nov` 本质是纯文本，记事本即可轻松编辑订正</br>
 
-<img width="200" height="100" alt="image" src="https://github.com/user-attachments/assets/4bdc7183-0083-4434-8a92-583a960fdf94" />
+<img width="200" height="100" alt="image" src="https://github.com/user-attachments/assets/7f5454f8-bd55-40ce-b39f-835dd4af8a59" />
+
 
 
 ---
@@ -35,7 +36,7 @@
 &nbsp; &nbsp; &nbsp; &nbsp; 只有上千个章节的独立标题，难以掌握超长小说剧情的脉络</br>
 ✅ 支持按分卷信息划分  &nbsp; ✅ 即使小说没有分卷，也会自动对章节进行分页</br>
 
-<img width="1224" height="748" alt="image" src="https://github.com/user-attachments/assets/c4b4ebee-0085-4854-a4f6-8346f3e3c9b3" />
+<img width="1186" height="736" alt="image" src="https://github.com/user-attachments/assets/9ea3b8db-c848-4a1a-9efc-6566cd8bd363" />
 
 
 ---
@@ -49,7 +50,7 @@
 
 ✅通过自动拆解长段落，使段落长短错落有致，从而提高读者的阅读浏览体验</br>
 
-<img width="1597" height="751" alt="image" src="https://github.com/user-attachments/assets/0187871c-f8c0-46ca-8340-7a34dd624c43" />
+<img width="1613" height="744" alt="image" src="https://github.com/user-attachments/assets/7e94387a-9392-4b11-9f10-e9eedb6f4a50" />
 
 
 ---
