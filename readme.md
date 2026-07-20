@@ -14,7 +14,7 @@
 ✅ 双击 `.nov` 直接阅读，无需额外导入 </br>
 
 【3】 将 *.txt* 转化为 *.epub* 虽然也能够解决前两个问题，但是由于下载的小说难免存在错别字或排版问题</br>
-&nbsp; &nbsp; &nbsp; &nbsp; 所以经常需要人工轻量级修订，而 *.epub* 格式十分复杂，**想要修改起来十分十分麻烦** </br>
+&nbsp; &nbsp; &nbsp; &nbsp; 所以经常需要人工轻量级修订，而 *.epub* 内部格式复杂，**用户想要修改非常不方便 ** </br>
 ✅ `.nov` 本质是纯文本，记事本即可轻松编辑订正</br>
 
 <img width="200" height="100" alt="image" src="https://github.com/user-attachments/assets/7f5454f8-bd55-40ce-b39f-835dd4af8a59" />
