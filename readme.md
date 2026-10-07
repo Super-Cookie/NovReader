@@ -2,7 +2,7 @@
 <img width="111" height="103" alt="Snipaste_2026-10-06_17-07-00" src="https://github.com/user-attachments/assets/981326cf-a6c8-417b-b631-5900295589a6" />
 
 
-**适用平台：window7/10/11**
+**适用平台：window 7/10/11**
 
 **是否联网：不联网，纯本地软件**
 
@@ -13,9 +13,9 @@
 
 ————————————————————————————————————————————————————
 
-**对比市面上一般的 window 端小说本地阅读软件，
-除了都有的小说章节解析、目录解析、最近阅读外，</br>
-本软件亮点主要在于管理和阅读方面：**
+**对比市面上一般的 window 端阅读软件，
+除了都有的章节解析、目录解析、最近阅读外，</br>
+本软件亮点主要在于针对本地的网络小说 管理和阅读方面：**
 </br>
 
 ## 【管理亮点】</br>
@@ -33,7 +33,7 @@
 ## 【阅读亮点】
 **【1】NovReader一行显示多个章节，充分利用电脑大屏幕，跳转更方便**</br>
 **【2】NovReader支持按分卷信息划分**</br>
-**【3】NovReader即使小说没有分卷，也会自动对章节进行分卷**</br>
+**【3】NovReader即使网络小说没有分卷，也会自动对章节进行分卷**</br>
 
 <img width="600" height="360" alt="image" src="https://github.com/user-attachments/assets/9ea3b8db-c848-4a1a-9efc-6566cd8bd363" />
 
@@ -68,6 +68,7 @@
 
 ## 【赞助码】
 **如果喜欢本软件，欢迎充电支持**</br>
+[爱发电](https://afdian.com/item/b1ee1950af5311f1ace75254001e7c00?utm_source=copylink&utm_medium=link)——点击链接跳转或扫描二维码</br>
 <img width="400" height="500" alt="afdian-葡萄芒果菠萝" src="https://github.com/user-attachments/assets/e3db2a74-91f2-4db3-b225-13a3e222e8b0" />
 
 ————————————————————————————————————————————————————
