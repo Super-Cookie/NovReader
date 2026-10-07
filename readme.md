@@ -2,10 +2,10 @@
 <img width="111" height="103" alt="Snipaste_2026-10-06_17-07-00" src="https://github.com/user-attachments/assets/981326cf-a6c8-417b-b631-5900295589a6" />
 
 
-**适用平台：window**
+**适用平台：window7/10/11**
 
 
-**是否付费：开源，非商用免费**
+**是否付费：非商用免费，开源，欢迎扫码充电来支持作者继续改进**
 
 
 **是否联网：不联网，纯本地软件**
