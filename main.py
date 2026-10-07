@@ -7,13 +7,19 @@ import os
 root = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, root)
 
-# Windows DPI 感知 - 让字体渲染更清晰
+# Windows DPI 感知 - PerMonitorV2 支持高分屏
 if sys.platform == "win32":
     try:
         import ctypes
-        ctypes.windll.shcore.SetProcessDpiAwareness(1)
+        ctypes.windll.shcore.SetProcessDpiAwareness(2)
     except Exception:
-        pass
+        try:
+            ctypes.windll.shcore.SetProcessDpiAwareness(1)
+        except Exception:
+            pass
+
+from novel_reader.config import init_dpi
+init_dpi()
 
 from novel_reader.ui.main_window import MainWindow
 

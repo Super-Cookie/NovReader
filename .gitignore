@@ -13,9 +13,13 @@ build/
 
 # 示例小说
 samples/
+show/
 
-# 本地脚本
-scripts/
+# 本地调试日志
+debug/
+
+# 测试文件
+test/
 
 # IDE
 .vscode/
@@ -27,6 +31,7 @@ scripts/
 *~
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # 虚拟环境
 venv/

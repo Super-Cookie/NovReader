@@ -115,20 +115,21 @@ def parse_novel_file(filepath):
             if (len(clean_line) > MAX_VOLUME_NAME_LENGTH or
                 '。' in clean_line or '.' in clean_line or
                 '章' in clean_line or '节' in clean_line or '回' in clean_line):
+                # 验证失败
+                # → 不是纯卷名，直接穿透给章节匹配处理
+                pass
+
+            elif clean_line in volume_set:
                 if current_paragraphs:
                     current_paragraphs.append(stripped)
                 continue
 
-            if clean_line in volume_set:
-                if current_paragraphs:
-                    current_paragraphs.append(stripped)
+            else:
+                # 检测到卷名，先flush之前的章节
+                flush_chapter()
+                volume_set.add(clean_line)
+                current_volume = full_line
                 continue
-
-            # 检测到卷名，先flush之前的章节
-            flush_chapter()
-            volume_set.add(clean_line)
-            current_volume = full_line
-            continue
 
         # 检测章节标题 - 整行匹配
         match = CHAPTER_MAIN_PATTERN.match(line)
@@ -147,8 +148,8 @@ def parse_novel_file(filepath):
             elif match.group(3):
                 title = match.group(3).strip()
                 keyword = match.group(4)
-                # 如果匹配到的关键词是"卷"，当作卷名处理
-                if keyword == "卷":
+                # "卷" / "集" 都当作卷名处理
+                if keyword in ("卷", "集"):
                     is_volume = True
                     chap_type = ChapterType.VOLUME
                 else:
@@ -162,12 +163,29 @@ def parse_novel_file(filepath):
             if title:
                 if is_volume:
                     clean_line = title.strip()
+                    # 与 VOLUME_PATTERN 的验证保持一致：排除含"章/节/回"的行
+                    # 同时包含集/章关键词 → 应降级为普通章节
                     if (len(clean_line) > MAX_VOLUME_NAME_LENGTH or
-                        '。' in clean_line or '.' in clean_line):
-                        current_paragraphs.append(stripped)
+                        '。' in clean_line or '.' in clean_line or
+                        '章' in clean_line or '节' in clean_line or '回' in clean_line):
+                        # 含章节关键词 → 当作普通章节处理
+                        # 同时尝试提取卷名前缀
+                        _m = re.search(r'第[^第\n\r]*?[章节回]', title)
+                        if _m and _m.start() > 0:
+                            _vn = title[:_m.start()].strip()
+                            if _vn and _vn not in volume_set:
+                                flush_chapter()
+                                volume_set.add(_vn)
+                                current_volume = _vn
+                            # 去掉章名前缀的卷名
+                            title = title[_m.start():].strip()
+                        flush_chapter()
+                        current_title = title
+                        current_type = ChapterType.CHAPTER
                     elif clean_line in volume_set:
                         current_paragraphs.append(stripped)
                     else:
+                        # 纯卷名 → 创建新卷
                         flush_chapter()
                         volume_set.add(clean_line)
                         current_volume = title

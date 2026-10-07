@@ -3,42 +3,57 @@
 import os
 import json
 
+from novel_reader import config
 
-def get_config_path():
-    """获取配置文件路径"""
-    user_dir = os.path.expanduser("~")
-    return os.path.join(user_dir, ".novel_reader_config.json")
+_OLD_CONFIG_PATH = os.path.join(os.path.expanduser("~"), ".novel_reader_config.json")
 
 
 def load_config():
-    """加载配置"""
-    config_path = get_config_path()
-    default_config = {
-        "recent_files": [],
-        "last_open_files": [],
-        "window_geometry": "",
-    }
-    try:
-        if os.path.exists(config_path):
-            with open(config_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            for key in default_config:
-                if key not in data:
-                    data[key] = default_config[key]
-            return data
-    except (json.JSONDecodeError, IOError):
-        pass
-    return default_config
+    """从统一配置文件加载运行时数据"""
+    settings_path = config.get_settings_path()
+
+    if os.path.exists(settings_path):
+        try:
+            with open(settings_path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except (json.JSONDecodeError, IOError):
+            pass
+    return {}
 
 
-def save_config(config):
-    """保存配置"""
-    config_path = get_config_path()
+def save_config(data):
+    """保存运行时数据到统一配置文件"""
+    config.save_settings(**data)
+
+
+def _migrate_old_config():
+    """将旧版 ~/.novel_reader_config.json 迁移到新的统一配置文件"""
+    if not os.path.exists(_OLD_CONFIG_PATH):
+        return
+
     try:
-        with open(config_path, "w", encoding="utf-8") as f:
-            json.dump(config, f, ensure_ascii=False, indent=2)
-    except IOError:
+        with open(_OLD_CONFIG_PATH, "r", encoding="utf-8") as f:
+            old = json.load(f)
+
+        settings_path = config.get_settings_path()
+        if os.path.exists(settings_path):
+            with open(settings_path, "r", encoding="utf-8") as f:
+                merged = json.load(f)
+        else:
+            merged = {}
+
+        for key in ("recent_files", "last_open_files", "window_geometry",
+                     "font_size", "text_indent"):
+            if key in old and key not in merged:
+                merged[key] = old[key]
+
+        config.save_settings(**merged)
+        os.remove(_OLD_CONFIG_PATH)
+    except (json.JSONDecodeError, IOError, OSError):
         pass
+
+
+_migrate_old_config()
 
 
 def normalize_path(filepath):
