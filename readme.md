@@ -7,7 +7,7 @@
 **是否联网：不联网，纯本地软件**
 
 **是否付费：开源，非商用免费**</br>
-**(如果喜欢本软件，欢迎 在[爱发电](https://afdian.com/a/diyapp?utm_source=copylink&utm_medium=link)充电 或 在[github](https://github.com/Super-Cookie/NovReader)上star)**
+**(如果喜欢本软件，欢迎 在[爱发电](https://afdian.com/a/diyapp?utm_source=copylink&utm_medium=link)充电 或 在`github`上star)**
 
 </div >
 
