@@ -66,7 +66,7 @@
 
 ## 【使用】
 
-- **打开 `.nov` 小说**：从 *Realease* 里下载 *NovReader_Setup.exe* 后安装即可</br>
+- **打开 `.nov` 小说**：安装从 `Realease`下载的 `NovReader_Setup.exe` 后，双击`.nov`文件即可打开</br>
 - **将 `.txt` 转化为 `.nov`**：</br>
 1️⃣单个文件 直接修改文件格式后缀为 *.nov* 即可</br>
 2️⃣多个文件 可以下载*Realease* 里面的 TxtToNov.bat批量修改
