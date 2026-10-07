@@ -68,7 +68,7 @@
 
 ## 【赞助码】
 **如果喜欢本软件，欢迎充电支持**</br>
-[爱发电](https://afdian.com/a/diyapp?utm_source=copylink&utm_medium=link)点击链接跳转或扫描二维码</br>
+[爱发电](https://afdian.com/a/diyapp?utm_source=copylink&utm_medium=link)————点击链接跳转或扫描二维码</br>
 <img width="400" height="500" alt="afdian-葡萄芒果菠萝" src="https://github.com/user-attachments/assets/e3db2a74-91f2-4db3-b225-13a3e222e8b0" />
 
 ————————————————————————————————————————————————————
